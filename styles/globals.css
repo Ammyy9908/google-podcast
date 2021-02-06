@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -14,3 +18,268 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.sidenav {
+  width: 250px;
+  z-index: 999;
+}
+
+.sidenav__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.sidenav__option {
+  width: 100%;
+  height: 45px;
+  background-color: #e3edfd;
+  color: #1a73e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-top-right-radius: 65px;
+  border-bottom-right-radius: 65px;
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+.fabs {
+  position: fixed;
+  transition: 0.3s ease-in-out;
+  bottom: 10px;
+  right: -100px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 65px;
+  background-color: #4b484841;
+  backdrop-filter: blur(10px);
+}
+.fabs > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 65px;
+  border: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fabs > button:nth-child(1) {
+  background-color: #390dff;
+  color: #fff;
+}
+.fabs > button:nth-child(2) {
+  background-color: #ff3300;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  /* border-bottom: 1px solid #dbdbdb; */
+  position: sticky;
+  top: 0;
+  z-index: 999 !important;
+  background-color: rgb(255, 255, 255);
+}
+.menu {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.menu > svg {
+  width: 24px;
+  height: 24px;
+}
+.nav__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  margin-left: 15px;
+}
+.brand__logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0.2;
+  margin-left: 5px;
+}
+
+.brand_name {
+  content: url("https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg");
+  display: inline-block;
+}
+.product_name {
+  margin-left: 5px;
+  color: #5f6368;
+  font-size: 22px;
+  padding-left: 4px;
+  display: inline-block;
+  font-family: "Product Sans", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  padding-left: 8px;
+  position: relative;
+  top: -1.5px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.search__podcasts {
+  flex: 0.2;
+  height: 35px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  border-radius: 65px;
+  margin-right: 10px;
+}
+.search__podcasts > .MuiSvgIcon-root {
+  margin-left: 5px;
+  color: #999;
+}
+.search__podcasts > input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  padding-left: 15px;
+}
+
+.subscription,
+.top_podcast,
+.trending__podcast,
+.society__podcast,
+.news,
+.comedy,
+.education,
+.business,
+.health {
+  padding: 0px 0px 16px;
+  margin-top: 25px;
+}
+.subscriptions,
+.top_podcasts,
+.trending__podcasts,
+.society_podcasts,
+.podcasts_news,
+.comedy__podcasts,
+.education_podcasts,
+.business_podcasts,
+.health_podcasts {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: flex-start;
+}
+.subscription__container__title,
+.top_podcast__title,
+.trending_podcast__title,
+.society_podcast__title,
+.news__container__title,
+.comedy__title,
+.education__title,
+.business__title,
+.health__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  max-height: 48px;
+  color: #202124;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.podcast__tile {
+  min-width: 112px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.podcast__tile:nth-child(1) {
+  margin-left: 0;
+}
+.podcast__cover {
+  width: 112px;
+  height: 112px;
+  border-radius: 4px;
+}
+.podcast__cover > img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.podcast__title {
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  max-height: 40px;
+  color: #202124;
+  display: -webkit-box;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  overflow: hidden;
+  padding-top: 4px;
+  white-space: normal;
+}
+.podcast__author {
+  letter-spacing: 0.025em;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #70757a;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .search__podcasts {
+    display: none;
+  }
+  .container {
+    width: 85%;
+  }
+  .brand_name {
+    display: none;
+  }
+}
+
+/* L :{w=>{0,1}=>w contains 0}
+
+/l = {0,00,01,0001,010101}
+/ l={1,111}
+
+
+/ l ={w=>{0,1]=>w ends with 0}
+/l = {0,,01,00,10,010,1110,...}
+/l={01,1,011,0111,...}
+
+/ l ={w=>{0,1}=>w starts with 0}
+/ l ={0,01,010,000,00,...}
+/l = {1,10,1110,1100,...}
+
+/ l ={w=>{0,1}:w have any length}
+
+l ={e,01,000,110,010101}
+
+/ l ={w=>{a,b}:w have no more than one b}
+/l={e,a,ab,ba,baa,aab,aba,....}*/
