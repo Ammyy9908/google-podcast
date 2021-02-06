@@ -208,11 +208,12 @@ export default function Home() {
   ];
   return (
     <div>
-      <Head title="Google Podcasts Clone">
+      <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
           rel="stylesheet"
         />
+        <title>Google Podcasts Clone</title>
       </Head>
       <div className="container">
         <Subscriptions subscriptions={subscriptions} />
