@@ -1,6 +1,8 @@
-const Tile = ({cover,title,author}) => {
+import Link from 'next/link';
+
+const Tile = ({cover,title,author,id}) => {
     return ( 
-        <div className="podcast__tile">
+        <Link href={`/feed/${id?id:'unknown id'}`}><div className="podcast__tile">
             <div className="podcast__cover">
             <img src={cover ? cover:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNbSxmQw7q9fTK1UbGB9d0lXq4X1G1rPP9oDjCj_40Hw1UUCC'}/>
             </div>
@@ -10,7 +12,7 @@ const Tile = ({cover,title,author}) => {
             <div className="podcast__author">
             {author ? author.length>15 ? author.substring(0,15)+"...":author :"Podcast Title"}
             </div>
-        </div>
+        </div></Link>
      );
 }
  

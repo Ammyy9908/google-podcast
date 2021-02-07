@@ -9,7 +9,7 @@ const Society = ({culture}) => {
             <div className="society_podcasts">
                 {
                     culture.map((item) =>{
-                        return <Tile cover={item.cover} title={item.title} author={item.author}/>
+                        return <Tile cover={item.cover} title={item.title} author={item.author} key={item.id} id={item.id}/>
                     })
                 }
             </div>
