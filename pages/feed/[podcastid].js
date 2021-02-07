@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import data from "./data";
+import data from "../../data/data";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import AddIcon from "@material-ui/icons/Add";
