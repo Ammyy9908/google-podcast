@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import AddIcon from "@material-ui/icons/Add";
 import LanguageIcon from "@material-ui/icons/Language";
+import Head from "next/head";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -23,6 +24,9 @@ const Feed = () => {
 
   return (
     <div className="container">
+      <Head>
+        <title>{parsed[0].title}</title>
+      </Head>
       <div className="feed_top_hero">
         <div className="feed_top_left">
           <div className="feed_podcast_title">{parsed[0].title}</div>
