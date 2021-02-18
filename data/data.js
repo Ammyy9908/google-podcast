@@ -1,5 +1,12 @@
 const data = [
   {
+    id: "aHR0cHM6Ly9zaW1wbGVwcm9ncmFtbWVyLmxpYnN5bi5jb20vcnNz",
+    author: "John Sonmez",
+    title: "Simple Programmer",
+    cover:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNbSxmQw7q9fTK1UbGB9d0lXq4X1G1rPP9oDjCj_40Hw1UUCC",
+  },
+  {
     id: "aHR0cHM6Ly9yc3MuYXJ0MTkuY29tL3RoZS1kYWlseQ",
     author: "The New York Times",
     title: "The Daily",
@@ -213,6 +220,27 @@ const data = [
     title: "Life KIT",
     cover:
       "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG6uKndESrJEjxlaXLItlsusxeA7-rAueRKjJlypmFMCYMsXiP",
+  },
+  {
+    cover:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFUlwm9dbYwq3nT82OUglkfwzNRZdPt0k3cTMrx5zkYHFBa8w1",
+    id: "aHR0cDovL2ZlZWRzLndueWMub3JnL2RlYXRoc2V4bW9uZXk",
+    author: "WNYC Studios",
+    title: "Death,Sex & Money",
+  },
+  {
+    cover:
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnyORpivCsWayfQQhEnh8yiHU4zAEtM0q07IVUY2lIgKVQ0jg",
+    id: "aHR0cDovL2Nob29zZWZpLmxpYnN5bi5jb20vcnNz",
+    author: "The unstuck Network",
+    title: "ChooseFI",
+  },
+  {
+    cover:
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpuCSZwgccEewjfJgN_dKJ5-StytXqvRYF5DoVdbnmA7AkopLn",
+    id: "2ahUKEwjuxtqgtvLuAhV243MBHdXfD1sQjs4CKAh6BQgBEIIB",
+    author: "Eric Siu & Neil Pate",
+    title: "Marketing School - Digital Marketing and Online Marketing Tips",
   },
 ];
 

@@ -15,10 +15,8 @@ const useStyles = makeStyles((theme) => ({
 const Feed = () => {
   const classes = useStyles();
   let uniqueData = new Set(data);
-  console.log(uniqueData);
   const router = useRouter();
   const { podcastid } = router.query;
-  console.log(podcastid);
   let parsed = Array.from(uniqueData).filter((item) => item.id === podcastid);
   parsed.length = 1;
 

@@ -1,14 +1,17 @@
 import Tile from "./Tile";
 
-const Business = () => {
+const Business = ({business}) => {
     return ( 
         <div className="business">
             <div className="business__title">
                 Top podcasts in Business
             </div>
             <div className="business_podcasts">
-                <Tile/>
-                <Tile/>
+                {
+                    business.map((item) =>{
+                        return <Tile key={item.id} title={item.title} author={item.author} cover={item.cover} id={item.id}/>
+                    })
+                }
             </div>
         </div>
      );

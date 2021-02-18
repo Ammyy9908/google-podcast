@@ -239,6 +239,49 @@ export default function Home() {
         "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG6uKndESrJEjxlaXLItlsusxeA7-rAueRKjJlypmFMCYMsXiP",
     },
   ];
+
+  const business = [
+    {
+      cover:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFUlwm9dbYwq3nT82OUglkfwzNRZdPt0k3cTMrx5zkYHFBa8w1",
+      id: "aHR0cDovL2ZlZWRzLndueWMub3JnL2RlYXRoc2V4bW9uZXk",
+      author: "WNYC Studios",
+      title: "Death,Sex & Money",
+    },
+    {
+      cover:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnyORpivCsWayfQQhEnh8yiHU4zAEtM0q07IVUY2lIgKVQ0jg",
+      id: "aHR0cDovL2Nob29zZWZpLmxpYnN5bi5jb20vcnNz",
+      author: "The unstuck Network",
+      title: "ChooseFI",
+    },
+    {
+      cover:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpuCSZwgccEewjfJgN_dKJ5-StytXqvRYF5DoVdbnmA7AkopLn",
+      id: "2ahUKEwjuxtqgtvLuAhV243MBHdXfD1sQjs4CKAh6BQgBEIIB",
+      author: "Eric Siu & Neil Pate",
+      title: "Marketing School - Digital Marketing and Online Marketing Tips",
+    },
+  ];
+
+  const health = [
+    {
+      cover:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoT9wuGi5f8aUnktGKqPbGdpoft9Bp64Z03Mp51UHkFLfK4Ubn",
+      id: "aHR0cDovLzdnb29kbWludXRlcy5saWJzeW4uY29tL3Jzcw",
+      author: "Clyde Lee Dennis",
+      title:
+        "7 Good Minutes Daily Self-Improvement Podcast with Clyde Lee Dennis",
+    },
+    {
+      cover:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15_HV7kHZp4BI9I2BGQPZN0nVraBBLKwDjXXYHiOWaJNtsyE",
+      id:
+        "aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvOWI3ZGFjZGYtYTkyNS00Zjk1LTg0ZGMtYWM0NjAwMzQ1MWZmLzVjZDc0MTNjLWIzNDEtNDkzZi1iZjQ2LWFjYjUwMDM2NDE0MS82YjI1NDBkNC1lMGIyLTQyZjctYTYxYS1hY2I1MDAzNjQxNWEvcG9kY2FzdC5yc3M",
+      author: "Rob Dial and Kast Media",
+      title: "The Mindset Mentor",
+    },
+  ];
   return (
     <div>
       <Head>
@@ -256,8 +299,8 @@ export default function Home() {
         <News news={news} />
         <Comedy comedy={comedy} />
         <Education education={education} />
-        <Business />
-        <Health />
+        <Business business={business} />
+        <Health health={health} />
       </div>
     </div>
   );
