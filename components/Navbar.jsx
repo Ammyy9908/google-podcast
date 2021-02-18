@@ -3,6 +3,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import { IconButton } from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
 import ClearIcon from '@material-ui/icons/Clear';
+import Link from 'next/link';
 
 const Navbar = ({setControl,isControl}) => {
     return ( 
@@ -11,7 +12,7 @@ const Navbar = ({setControl,isControl}) => {
             <IconButton onClick={()=>isControl?setControl(false):setControl(true)}>{isControl ? <ClearIcon/>:<MenuIcon/>}</IconButton>
             <div className="brand__logos">
             <span className="brand_name">Google</span>
-            <span className="product_name">Podcasts</span>
+            <Link href="/"><a><span className="product_name">Podcasts</span> </a></Link>
             </div>
             </div>
             <div className="search__podcasts">

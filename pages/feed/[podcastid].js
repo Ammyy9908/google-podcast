@@ -19,16 +19,32 @@ const Feed = () => {
   const { podcastid } = router.query;
   let parsed = Array.from(uniqueData).filter((item) => item.id === podcastid);
   parsed.length = 1;
+  console.log(parsed.length);
+  if (parsed.length != 1) {
+    parsed = [
+      {
+        id: "unknown",
+        title: "Unknown",
+        author: "Unknown",
+        cover:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNbSxmQw7q9fTK1UbGB9d0lXq4X1G1rPP9oDjCj_40Hw1UUCC",
+      },
+    ];
+  }
 
   return (
     <div className="container">
       <Head>
-        <title>{parsed[0].title}</title>
+        <title>{parsed[0] ? parsed[0].title : "Unknown Podcast"}</title>
       </Head>
       <div className="feed_top_hero">
         <div className="feed_top_left">
-          <div className="feed_podcast_title">{parsed[0].title}</div>
-          <div className="feed_podcast_author">{parsed[0].author}</div>
+          <div className="feed_podcast_title">
+            {parsed[0] ? parsed[0].title : "Unknown Podcast"}
+          </div>
+          <div className="feed_podcast_author">
+            {parsed[0] ? parsed[0].author : "Unknown Author"}
+          </div>
           <div className="feed_buttons">
             <Button
               variant="outlined"
@@ -49,7 +65,13 @@ const Feed = () => {
           </div>
         </div>
         <div className="feed_top_right">
-          <img src={parsed[0].cover} />
+          <img
+            src={
+              parsed[0]
+                ? parsed[0].cover
+                : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xuULLVWOHniPL2pBfT3NuN1LElVkuqez6yxfbn1DRvFyqUw"
+            }
+          />
         </div>
       </div>
       <span className="podcast__desc">
